@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - static-insta
+name: Build and deploy Python app to Azure Web App - static-Insta
 
 on:
   push:
@@ -63,14 +63,14 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_CE0DB9294AB147269FAEA59DAB432A6D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6510DFCAD69F4B74827DFD057CF07F5B }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BD2F005120094632BE579A0EDAC2AF46 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_F12E9BDFD7994942922E64A2D2CCE652 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5D78951F14B34124AB8513D057048C26 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2B04950B9F6243D1B2159ED235F3160A }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'static-insta'
+          app-name: 'static-Insta'
           slot-name: 'Production'
           
